@@ -23,7 +23,7 @@
     <string name="technicalinspection">Technical Inspection: </string>
     <!--<string name="emissioncertificate">Emission Certificate: </string>-->
 
-    <string name="insurances">Insurances</string>
+    <string name="insurances">Insurances &amp; Documents</string>
     <string name="approvals">Approvals</string>
 
     <string name="vehicularinsurance">Insurance:</string>
@@ -33,4 +33,7 @@
     <string name="button_Exit_text">Salida</string>
     <string name="arrival">Arrival Date: </string>
     <string name="days">Days at site: </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

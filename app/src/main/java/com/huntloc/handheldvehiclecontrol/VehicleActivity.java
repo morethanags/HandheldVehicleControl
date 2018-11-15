@@ -43,10 +43,10 @@ public class VehicleActivity extends AppCompatActivity {
     SimpleDateFormat format = new SimpleDateFormat("MM-dd-yyyy"), format1 = new SimpleDateFormat("MMM dd yyyy");
     String VEHICLEID, PLATE;
     LogOperation logOperation = null;
-    private ImageView imageView_SecurityApproval, imageView_EnvironmentalApproval, imageView_SafetyApproval, imageView_Photo;
+    private ImageView imageView_SecurityApproval, imageView_EnvironmentalApproval, imageView_SafetyApproval, imageView_Photo, imageView_Env;
     private TextView textView_Plate, textView_Contractor, textView_Type, textView_Category,
             textView_Maker_Model_Year, textView_OwnershipCard, textView_SecurityApproval,
-            textView_EnvironmentalApproval, textView_SafetyApproval;
+            textView_EnvironmentalApproval, textView_SafetyApproval, textView_EnvLabel, textView_EnvExpiry;
     private TextView textView_InsuranceExpiry, textView_SoatExpiry;
     private ImageView imageView_Insurance, imageView_Soat;
     private Button button_Entrance, button_Exit;
@@ -58,7 +58,7 @@ public class VehicleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Intent intent = getIntent();
-        String response = intent.getStringExtra(MainActivity.VEHICLE_MESSAGE);
+        String response = intent.getStringExtra(HandheldFragment.VEHICLE_MESSAGE);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vehicle);
@@ -122,17 +122,27 @@ public class VehicleActivity extends AppCompatActivity {
         imageView_EnvironmentalApproval = (ImageView) view
                 .findViewById(R.id.imageView_EnvironmentalApproval);
 
-       /* textView_SafetyApproval = (TextView) view
+        textView_SafetyApproval = (TextView) view
                 .findViewById(R.id.textView_SafetyApproval);
         imageView_SafetyApproval = (ImageView) view
                 .findViewById(R.id.imageView_SafetyApproval);
-*/
+
         imageView_Photo = (ImageView) view
                 .findViewById(R.id.imageView_Photo);
 
         destination = (Spinner) findViewById(R.id.spinner_destination);
 
         delivery = (LinearLayout) findViewById(R.id.delivery);
+
+        imageView_Env = (ImageView) view
+                .findViewById(R.id.imageView_Env);
+
+        textView_EnvLabel = (TextView) view
+                .findViewById(R.id.textView_EnvLabel);
+
+        textView_EnvExpiry = (TextView) view
+                .findViewById(R.id.textView_EnvExpiry);;
+
         String serverURL = getResources().getString(R.string.service_url)
                 + "/VehicleService/Retrieve/ByPlate/" + response;
         Log.d("url", serverURL);
@@ -287,8 +297,17 @@ public class VehicleActivity extends AppCompatActivity {
                 imageView_EnvironmentalApproval.setImageResource(R.mipmap.ic_error);
                 imageView_EnvironmentalApproval.setColorFilter(ContextCompat.getColor(this, R.color.error));
             }
-
-           /* JSONObject safetyapproval = response.getJSONObject("SafetyApproval");
+            s(envapproval, imageView_Env, textView_EnvExpiry);
+            if(!envapproval.isNull("VehicleEmissionsCertificateType") && !envapproval.getJSONObject("VehicleEmissionsCertificateType").isNull("Description")){
+                String[] strArray = envapproval.getJSONObject("VehicleEmissionsCertificateType").getString("Description").split(" ");
+                StringBuilder builder = new StringBuilder();
+                for (String s : strArray) {
+                    String cap = s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase();
+                    builder.append(cap + " ");
+                }
+                textView_EnvLabel.setText(builder+":");
+            }
+            JSONObject safetyapproval = response.getJSONObject("SafetyApproval");
             if (safetyapproval.optBoolean("Validity") == true) {
                 textView_SafetyApproval.setText("VALID");
                 imageView_SafetyApproval.setImageResource(R.mipmap.ic_verified);
@@ -299,7 +318,7 @@ public class VehicleActivity extends AppCompatActivity {
                 textView_SafetyApproval.setText("NOT VALID");
                 imageView_SafetyApproval.setImageResource(R.mipmap.ic_error);
                 imageView_SafetyApproval.setColorFilter(ContextCompat.getColor(this, R.color.error));
-            }*/
+            }
             button_Entrance.setEnabled(enabled);
             button_Exit.setEnabled(enabled);
 

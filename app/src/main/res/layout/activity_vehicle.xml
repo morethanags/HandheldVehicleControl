@@ -58,7 +58,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".55"
                         android:gravity="left"
                         android:text="@string/arrival"
                         android:textSize="12sp" />
@@ -67,13 +67,13 @@
                         android:id="@+id/textView_arrival"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".40"
+                        android:layout_weight=".35"
                         android:gravity="left"
                         android:textSize="12sp" />
                     <ImageView
                         android:id="@+id/imageView_arrival"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="right"
                         android:scaleType="fitCenter" />
                 </LinearLayout>
@@ -86,7 +86,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".55"
                         android:gravity="left"
                         android:text="@string/days"
                         android:textSize="12sp" />
@@ -95,7 +95,7 @@
                         android:id="@+id/textView_days"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".45"
                         android:gravity="left"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -117,7 +117,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".55"
                         android:gravity="left"
                         android:text="@string/plate"
                         android:textSize="12sp" />
@@ -126,7 +126,7 @@
                         android:id="@+id/textView_Plate"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".45"
                         android:gravity="left"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -139,7 +139,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".55"
                         android:gravity="left"
                         android:text="@string/contractor"
                         android:textSize="12sp" />
@@ -148,7 +148,7 @@
                         android:id="@+id/textView_Contractor"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".45"
                         android:gravity="left"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -161,7 +161,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".55"
                         android:gravity="left"
                         android:text="@string/category"
                         android:textSize="12sp" />
@@ -170,7 +170,7 @@
                         android:id="@+id/textView_Category"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".45"
                         android:gravity="left"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -183,7 +183,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".55"
                         android:gravity="left"
                         android:text="@string/type"
                         android:textSize="12sp" />
@@ -192,7 +192,7 @@
                         android:id="@+id/textView_Type"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".45"
                         android:gravity="left"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -227,7 +227,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".55"
                         android:gravity="left"
                         android:text="@string/ownershipcard"
                         android:textSize="12sp" />
@@ -236,7 +236,7 @@
                         android:id="@+id/textView_OwnershipCard"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".45"
                         android:gravity="left"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -297,7 +297,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".55"
                         android:gravity="left"
                         android:text="@string/vehicularinsurance"
                         android:textSize="12sp" />
@@ -306,14 +306,14 @@
                         android:id="@+id/textView_InsuranceExpiry"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".40"
+                        android:layout_weight=".35"
                         android:gravity="left"
                         android:textSize="12sp" />
 
                     <ImageView
                         android:id="@+id/imageView_Insurance"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="right"
                         android:scaleType="fitCenter" />
                 </LinearLayout>
@@ -326,7 +326,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".50"
+                        android:layout_weight=".55"
                         android:gravity="left"
                         android:text="@string/soat"
                         android:textSize="12sp" />
@@ -335,17 +335,45 @@
                         android:id="@+id/textView_SoatExpiry"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".40"
+                        android:layout_weight=".35"
                         android:gravity="left"
                         android:textSize="12sp" />
 
                     <ImageView
                         android:id="@+id/imageView_Soat"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="right"
                         android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="0dp">
 
+                    <TextView
+                        android:id="@+id/textView_EnvLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".55"
+                        android:gravity="left"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView_EnvExpiry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".35"
+                        android:gravity="left"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_Env"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="right"
+                        android:scaleType="fitCenter" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -377,7 +405,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".80"
+                        android:layout_weight=".60"
                         android:gravity="left"
                         android:text="@string/securitylapproval"
                         android:textSize="12sp" />
@@ -386,14 +414,14 @@
                         android:id="@+id/textView_SecurityApproval"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".20"
+                        android:layout_weight=".40"
                         android:gravity="left"
                         android:textSize="12sp" />
 
                     <ImageView
                         android:id="@+id/imageView_SecurityApproval"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="right"
                         android:scaleType="fitCenter" />
 
@@ -407,7 +435,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".80"
+                        android:layout_weight=".60"
                         android:gravity="left"
                         android:text="@string/environmentalapproval"
                         android:textSize="12sp" />
@@ -416,19 +444,22 @@
                         android:id="@+id/textView_EnvironmentalApproval"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".20"
+                        android:layout_weight=".40"
                         android:gravity="left"
                         android:textSize="12sp" />
 
                     <ImageView
                         android:id="@+id/imageView_EnvironmentalApproval"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="right"
                         android:scaleType="fitCenter" />
 
                 </LinearLayout>
-       <!--         <LinearLayout
+
+
+
+               <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -452,12 +483,12 @@
 
                     <ImageView
                         android:id="@+id/imageView_SafetyApproval"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="right"
                         android:scaleType="fitCenter" />
 
-                </LinearLayout>-->
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
